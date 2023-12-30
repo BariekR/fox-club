@@ -1,0 +1,6 @@
+<div th:fragment="listGroup" class="list-group col-3 mb-3">
+    <a th:href="@{/login}" class="list-group-item list-group-item-action list-group-item-success">Login</a>
+    <a th:href="@{/(name=${foxObject.getName()})}" class="list-group-item list-group-item-action list-group-item-success">Information</a>
+    <a th:href="@{/nutritionStore(name=${foxObject.getName()})}" class="list-group-item list-group-item-action list-group-item-success">Nutrition Store</a>
+    <a th:href="@{/trickCenter(name=${foxObject.getName()})}" class="list-group-item list-group-item-action list-group-item-success">Trick Center</a>
+</div>
